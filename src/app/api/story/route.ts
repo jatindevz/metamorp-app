@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/database/db";
 import Story from "@/models/story.model";
 
-export async function POST(req) {
+export async function POST(req: NextRequest) {
   await connectDB();
   const { story, name, twitter, insta } = await req.json();
 

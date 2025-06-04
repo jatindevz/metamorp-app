@@ -68,8 +68,6 @@ const Feed = () => {
       }
     };
 
-   
-    // setStories(dummyStories);
     console.log(stories);
     fetchStories();
   }, []);
