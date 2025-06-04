@@ -67,8 +67,7 @@ const Feed = () => {
         console.error("Error fetching stories:", error);
       }
     };
-
-    console.log(stories);
+    
     fetchStories();
   }, []);
 
