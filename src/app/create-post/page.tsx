@@ -59,7 +59,7 @@ export default function CreatePost() {
         </p>
       </div>
 
-      <Card className="mt-10 w-full max-w-2xl p-6 space-y-5 bg-[#0F0F1C] border border-[#1e1e1e] shadow-lg">
+      <Card className="mt-10 w-full max-w-2xl p-6 space-y-5 bg-[#0F0F1C] border border-[#1e1e1e] shadow-lg text-white">
         <Textarea
           maxLength={320}
           placeholder="Write your story..."
@@ -72,6 +72,7 @@ export default function CreatePost() {
           placeholder="Your name or nickname"
           maxLength={32}
           value={post.name}
+          className="text-white"
           onChange={(e) => setPost({ ...post, name: e.target.value })}
         />
 
